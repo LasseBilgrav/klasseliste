@@ -16,24 +16,21 @@
 // message();
 
 function adgang(){
-    let age = prompt("Hvor gammel er du?")
+    let age = prompt("Hvor gammel er du?");
     age = parseInt(age);
+
     
-    while(condition) {
-        if(isNaN(age)){
+    if(isNaN(age)){
             alert("Indtast en gyldig alder");
             return;
-        }
-
-        if(age < 18){
-            alert("Du er ikke gammel nok til denne hjemmeside")
-            break;
-        }
-        else if(age >= 18){
-            alert("Du er gammel nok! Velkommen til hjemmesiden")
-            break;
-        }
-    }    
+    }
+    
+    if(age < 18){
+            alert("Du er ikke gammel nok til denne hjemmeside");
+    } else{
+            alert("Du er gammel nok! Velkommen til hjemmesiden");
+    }
+        
 }
 
 adgang();
